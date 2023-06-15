@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lectia2</title>
+  </head>
+  <body>
+    <h1>Tabele</h1>
+    <table>
+      <caption>
+        Train schedule
+      </caption>
+      <thead>
+        <tr>
+          <th>Train number</th>
+          <th>Route</th>
+          <th>Travel time</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td>433</td>
+          <td>London - Paris</td>
+          <td>5 hours</td>
+        </tr>
+        <tr>
+          <td>701</td>
+          <td>New York - Chicago</td>
+          <td>7 hours</td>
+        </tr>
+        <tr>
+          <td>258</td>
+          <td>Oslo - Warsaw</td>
+          <td>4 hours</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h2>Gruparea celulelor</h2>
+    <table>
+      <thead>
+        <tr>
+          <th rowspan="2">Cloud service</th>
+          <th colspan="3">Statistics</th>
+        </tr>
+        <tr>
+          <th>Users</th>
+          <th>Visits</th>
+          <th>Volume</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td>Google</td>
+          <td>12000</td>
+          <td>307000</td>
+          <td>1000 Tb</td>
+        </tr>
+        <tr>
+          <td>Amazon</td>
+          <td>9000</td>
+          <td>200500</td>
+          <td>800 Tb</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h2>Marcajul textului</h2>
+    <h3>Tag-ul dl (dt /dd):</h3>
+    <dl>
+      <dt>JPEG</dt>
+      <dd>
+        Large files that do not require transparent backgrounds or animations.
+        This format is ideal for vivid photorealistic photographs as it can
+        contain millions of colors.
+      </dd>
+
+      <dt>PNG</dt>
+      <dd>
+        Has an additional parameter for describing transparency - the alpha
+        channel. Suitable for images with transparent or monochrome backgrounds.
+        Used for icons and decorative items.
+      </dd>
+
+      <dt>webP</dt>
+      <dd>
+        A replacement format for PNG and JPEG, but with incomplete browser
+        support. When equal image quality, the compressed files will be smaller
+        than PNG and JPEG on average by 25%.
+      </dd>
+    </dl>
+
+    <h3>Tag-ul span:</h3>
+    <!-- Un span cu atributul class="accent" poate fi stilizat folosind CSS, cum ar fi o culoare diferită a textului, dimensiunea textului etc. -->
+    <p>
+      Tag-ul <span class="accent">span</span> este un container generic pentru
+      conținut de text mic.
+    </p>
+
+    <h3>Tag-ul pre:</h3>
+    <!-- În mod implicit, browserul ignoră întreruperile de rând și mai mult de un spațiu la rând. 
+      Acest tag vă permite să adăugați un text preformatat cu întreruperi de linie forțate. 
+      De exemplu, marcarea textului unui cântec sau a unei poezii. -->
+    <pre>
+        Wyatt resteth here, that quick could never rest;
+        Whose heavenly gifts increased by disdain,
+        And virtue sank the deeper in his breast;
+        Such profit he by envy could obtain.
+      </pre
+    >
+
+    <pre>
+        A head where wisdom mysteries did frame,
+        Whose hammers beat still in that lively brain
+        As on a stithy where that some work of fame
+        Was daily wrought, to turn to Britain's gain.
+      </pre
+    >
+
+    <pre>
+        A visage stern and mild, where both did grow,
+        Vice to contemn, in virtue to rejoice;
+        Amid great storms, whom grace assured so
+        To live upright and smile at fortune's choice.
+      </pre
+    >
+
+    <h3>Tag-urile sup și sub:</h3>
+    <p>Formula of water - H<sub>2</sub>O</p>
+
+    <p>Total area of the room - 150м<sup>2</sup>.</p>
+
+    <p>Solve the equation a<sup>3</sup>+a<sup>2</sup>=4</p>
+
+    <h3>Tag-ul time:</h3>
+    <!-- Data și ora pot fi scrise în formă de text simplu, dar se recomandă să folosiți tag-ul specific <time>. 
+      Pentru oameni, data este un text în interiorul unui tag, dar pentru un computer este valoarea atributului datetime în format ISO 8601. -->
+    <p>
+      Cele mai recente știri
+      <time datetime="2019-12-14">pentru 14 decembrie 2019</time>.
+    </p>
+
+    <p>
+      Ședința a avut loc la ora
+      <time datetime="2018-07-14T11:30">11:30 dimineața</time>.
+    </p>
+    <h3>Tag-ul address:</h3>
+    <!-- Acesta este conceput pentru a stoca informații de contact despre autorul unui articol, un bloc de informații sau o pagină web în ansamblu. 
+      Informațiile de contact pot fi scrise în orice formă adecvată, cum ar fi o adresă fizică, o adresă de e-mail, link-ul unui site web, un număr de telefon, un tag social media. -->
+    <address>Bistrita, aleea Voinicului 2/A/9, 420083 BN.</address>
+
+    <address>
+      <a href="mailto:mango@mail.pig">mango@mail.pig</a> <br />
+      <a href="tel:+1112223344">(111) 222-33-44</a>
+    </address>
+
+    <h3>Tag-urile strong și b</h3>
+    <p>
+      <strong>Atenție!</strong> Abonamentul expiră.
+      <strong>Contul va fi suspendat.</strong> Vă rugăm să vă prelungiți
+      abonamentul sau să contactați serviciul de asistență.
+    </p>
+
+    <h3>Tag-urile em și i:</h3>
+    <p>Sunt <em>nespus de bucuros</em> când salariile se dau cu întârziere!</p>
+
+    <h2>Entități</h2>
+    <!-- Nu toate caracterele pot fi introduse de la tastatură. 
+      De exemplu, simbolul mărcii înregistrate ®, marca comercială ™, sau dreptul de autor ©. 
+      Pentru a introduce astfel de caractere, utilizați entitățile.
+INTERESANT
+Standardul de codificare Unicode stochează caracterele la aproape toate limbile lumii, precum și caracterele speciale și rezervate. 
+Entitățile sunt "mnemonice de referință" care indică browserului ce caracter Unicode să fie afișat.
+Entitățile reprezintă șiruri speciale pe care browserele le convertesc în caractere. 
+Înlocuirea poate fi făcută în mai multe moduri.
+
+&entitate; – pentru a introduce un caracter utilizând numele entității sale.
+&#COD10; – pentru a introduce un caracter folosind codul său zecimal.
+&#xCOD16; – pentru a introduce un caracter folosind codul său hexazecimal.
+De exemplu, simbolul dreptului de autor © poate fi adăugat astfel. -->
+    <p>Toate drepturile rezervate &copy; Lex, 2020</p>
+    <p>Toate drepturile rezervate &#169; Lex, 2020</p>
+    <p>Toate drepturile rezervate &#xa9; Lex, 2020</p>
+    <p>
+      Pentru un text îngroșat, evidențiați-l cu tag-urile <strong> și </strong>.
+    </p>
+    <p>
+      Pentru un text îngroșat, evidențiați-l cu tag-urile &lt;strong&gt; și
+      &lt;/strong&gt;.
+    </p>
+
+    <h2>Video si audio</h2>
+    <h3>Video:</h3>
+    <video
+      src="http://techslides.com/demos/sample-videos/small.webm"
+      poster="https://images.pexels.com/photos/595804/pexels-photo-595804.jpeg?w=640"
+      width="640"
+      controls
+      autoplay
+      loop
+      preload="auto"
+    ></video>
+
+    <!-- Încărcarea unui singur format de fișier video nu este suficientă, este posibil ca unele browsere să nu îl suporte și utilizatorul nu va putea viziona videoclipul. 
+      Există mai multe formate video populare care trebuie furnizate browserului din care să aleagă: webm, mp4 și ogg.
+Pentru a face acest lucru, eliminăm atributul src din tag-ul <video> și adăugăm un tag nou <source> pentru fiecare format. 
+  În atributul src specificăm adresa fișierului video, iar în atributul type formatul video. 
+  Browserul îl va selecta pe primul din listă care îl suportă și îl va încărca, ignorându-le pe celelalte.
+ -->
+    <video
+      poster="https://images.pexels.com/photos/595804/pexels-photo-595804.jpeg?w=640"
+      width="640"
+      controls
+    >
+      <source
+        src="http://techslides.com/demos/sample-videos/small.webm"
+        type="video/webm"
+      />
+      <source
+        src="http://techslides.com/demos/sample-videos/small.mp4"
+        type="video/mp4"
+      />
+      <source
+        src="http://techslides.com/demos/sample-videos/small.ogv"
+        type="video/ogg"
+      />
+    </video>
+
+    <h3>Audio:</h3>
+    <audio src="song.mp3" controls autoplay loop preload="auto"></audio>
+    <br />
+    <audio controls>
+      <source src="song.mp3" type="audio/mp3" />
+      <source src="song.ogg" type="audio/ogg" />
+    </audio>
+    <h3>Suport pentru browsere mai vechi:</h3>
+    <!-- Dacă browserul este foarte vechi și nu suportă conținut media HTML5, trebuie să anunțați utilizatorul despre aceasta. 
+  Pentru a face acest lucru, în interiorul tag-urilor <video> sau <audio>, după toate tag-urile <source>, 
+    adăugați o linie de text pe care browserul o va afișa dacă nu acceptă conținut media. -->
+    <video
+      poster="https://images.pexels.com/photos/595804/pexels-photo-595804.jpeg?w=640"
+      width="640"
+      controls
+    >
+      <source
+        src="http://techslides.com/demos/sample-videos/small.webm"
+        type="video/webm"
+      />
+      <source
+        src="http://techslides.com/demos/sample-videos/small.mp4"
+        type="video/mp4"
+      />
+      <source
+        src="http://techslides.com/demos/sample-videos/small.ogv"
+        type="video/ogg"
+      />
+
+      Your browser does not support the <code>video</code> element.
+    </video>
+
+    <audio controls>
+      <source src="song.mp3" type="audio/mpeg" />
+      <source src="song.ogg" type="audio/ogg" />
+
+      Your browser does not support the <code>audio</code> element.
+    </audio>
+  </body>
+</html>
