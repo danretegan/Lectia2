@@ -1,2 +1,2 @@
-# Lectia2
- Modulul 1 Lectia 2 
+# Lectia 2 - Tabele
+ Lectia 2 - Tabele
